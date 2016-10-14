@@ -1,3 +1,5 @@
+import { JsonApiModule } from 'angular2-jsonapi';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -10,11 +12,11 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
+    JsonApiModule,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
